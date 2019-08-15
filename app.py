@@ -6,6 +6,6 @@ from markdown_it_synapse_lambda.markdown_it_synapse_lambda_stack import Markdown
 
 
 app = core.App()
-MarkdownItSynapseLambdaStack(app, "markdown-it-synapse-lambda")
+MarkdownItSynapseLambdaStack(app, "markdown-it-synapse-lambda", env={'region': 'us-east-1'})
 
 app.synth()
